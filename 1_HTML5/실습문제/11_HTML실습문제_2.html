@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <ol>
+                <li>
+                    <label for="name">납품자명 : </label>
+                    <input name="name" type="text">
+                </li>
+                <br>
+                <li>
+                    <label for="email">email : </label>
+                    <input name="email" id="email" type="email">
+                </li>
+                <br>
+                <li>
+                    <label for="url">홈페이지 : </label>
+                    <input name="url" id="url" type="url" value="http://">
+                </li>
+                <br>
+                <li>
+                    <label for="local">지역 : </label>
+                    <select id="local" name="local" id="local">
+                        <option>부산</option>
+                        <option>서울</option>
+                        <option>강원도</option>
+                    </select>
+                </li>
+            </ol>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+                <li>
+                    <label for="product">상품명 : </label>
+                    <input name="product" type="text" id="product">
+                </li>
+                <br>
+                <li>
+                    <label for="count">납품수량 : </label>
+                    <input name="count" id="count" type="number" placeholder="최소 100" min="100">
+                </li>
+                <br>
+                <li>
+                    <label for="grade">납품 등급 : </label>
+                    <input name="grade" id="grade" type="range">
+                </li>
+                <br>
+                <li>
+                    <label for="area">기타사항 : </label>
+                    <textarea name="request" id="area" cols="20" rows="4"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <button>send message</button>
+    </form>
+</body>
+</html>
