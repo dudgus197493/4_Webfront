@@ -1,0 +1,114 @@
+body {
+    height: 400vh;
+}
+.test {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    background-color: rgba(255, 0, 0, 0.3);
+
+    /* 절대적인 위치를 가질 수 있게 설정 */
+    position: absolute;
+
+    left: 0px; /* 왼쪽으로 부터 0px 떨어진 위치 */
+    top: 0px; /* 위에서 부터 0px 떨어진 위치 */
+}
+
+.container1 {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.container1 > div {
+    box-sizing: border-box; 
+    /* content + padding + border 의 합이 W/H와 같게 content 비율 자동 조정 */
+
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.first {
+    width: 300px;
+    height: 300px;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    z-index: 1;
+}
+.second {
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    position: absolute;
+    /* absolute 요소끼리 겹치게 된 경우
+        나중에 해석되는 html요소가 위쪽에 자리잡음
+    */
+    /* top: 50px;
+
+    left: 50px; */
+
+    right: 50px;
+    bottom: 50px;
+    z-index: 2;
+}
+.third {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+}
+/* 요소를 정가운데 배치하기 
+    1. 감싸는 요소가 position : relative;
+    2. 배치될 요소가 position : absolute;
+    3. 배치될 요소를 사방으로 잡아 당김
+       (top, bottom, left, right)
+    4. 배치될 요소에 margin : auto; 를 추가하여
+       감싸는 요소와의 간격을 자동으로 조정 -> 가운데 배치
+*/
+#center {
+    width: 50px;
+    height: 50px;
+    background-color: darkcyan;
+
+    position: absolute;
+
+    bottom: 0px; /* bottom에서부터 0 만큼 이격 */
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+}
+
+/* position : fixed */
+.fixed-area{
+    border: 1px solid black;
+    width: 120px;
+    text-align: center; /* 내부에 작성된 글, inline 요소를 가운데 정렬 */
+
+    position: fixed;
+    /* absolute는 body나, 감싸는 영역(relative)을 기준으로 배치 
+        fixed는 화면(브라우저, 뷰포트)을 기준으로 배치
+        (body 태그에 종속되지 않음)
+    */
+
+    bottom: 50px;
+    right: 50px;
+}
+
+/* sticky */
+#sticky-title {
+    margin: 0px; /* h1태그 고유의 margin 삭제 */
+    background-color: violet;
+    color: white;
+    padding: 40px 20px 20px;
+
+    position: sticky;
+    top: -20px; /* 요소가 화면을 벗어났을 때 위쪽으로 -20px 위치에 고정 */
+    z-index: 5; /* absolute 요소에 아래로 겹치지 않도록 지정 */
+}

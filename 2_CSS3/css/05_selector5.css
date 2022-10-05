@@ -10,7 +10,7 @@
     background-color: crimson;
 }
 #test2 > pre:only-of-type {
-    /* #test2에 자식p태그가 하나일 경우 */
+    /* #test2에 자식pre태그가 하나일 경우 */
     background-color: springgreen;
 }
 
