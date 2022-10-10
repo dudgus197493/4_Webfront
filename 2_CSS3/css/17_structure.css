@@ -1,3 +1,14 @@
+body {
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex-basis: 85%;
+}
+footer {
+    flex-basis: 15%;
+}
 * {
     box-sizing: border-box;
 
@@ -91,7 +102,7 @@ nav {
     border-bottom: 4px solid #455ba8;
 
     position: sticky;
-    /* 화면 밖으로 요소가 벗어 날 때 지정된 위치에 요소 고정 */
+    /* 화면 밖으로 요소가 벗어 날 때 지정된 위치에  요소 고정 */
     top: 0px;
     /* 위쪽으로부터 0px 떨어진 위치에 고정 */
     background-color: white;
