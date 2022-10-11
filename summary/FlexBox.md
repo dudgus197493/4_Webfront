@@ -7,6 +7,31 @@
 - ### FlexBox 축(axis)
   - 중심축(main axis)
   - 교차축, 반대축(cross axis)
+- ### *flex-container 속성과 item 속성은 동시에 가질수 있음*
+
+<br>
+
+## flex-container / item 속성들
+- ### **flex-container**
+    |구분|설명|
+    |:--:|:--|
+    |[display : flex](#display--flex)|item을 감싸는 요소의 형식을 flex로 변경|
+    |[flex-direction](#flex-direction)|main-axis의 방향과 시작 위치를 지정하는 속성|
+    |[flex-wrap](#flex-wrap)|item들을 포장하는 속성|
+    |[flex-flow](#flex-flow)|flex-direction과 flex-wrap을 한번에 지정하는 속성|
+    |[justify-content](#justify-content)|main-axis 방향으로 내용(item)을 정렬하는 방법을 조정하는 속성|
+    |[align-items](#align-items)|main-axis에 정렬된 item들을 cross-axis 방향으로 정렬하는 방법을 지정하는 속성|
+
+- ### **item**
+    |구분|설명|
+    |:--:|:--|
+    |[align-content](#align-content)|item이 포장된 한 줄을 단위로 cross-axis 방향으로 배치하는 방법|
+    |[order](#order)|item main-axis 방향으로 배치되는 순서를 지정하는 속성|
+    |[flex-grow](#flex-grow)|item의 팽창 정도를 지정하는 속성|
+    |[flex-shrink](#flex-shrink)|item이 수축하는 정도를 지정하는 속성|
+    |[flex-basis](#flex-basis)|main-axis 방향으로 item이 차지하는 크기를 지정하는 속성|
+    |[item-flex](#item---flex-속성)|grow + shrink + basis을 한번에 지정|
+    |[align-self](#align-self)|각 item별로 교차죽 배치를 지정하는 속성|
 
 <br>
 
@@ -72,7 +97,7 @@
 
 <br>
 
-## flex-direction 속성
+## flex-direction
 > ### main-axis(메인축)의 방향과 시작 위치를 지정하는 속성
 > *가로 방향(행, 기본값), 가로 역방향*  
 > *세로 방향(열), 세로 역방향*
