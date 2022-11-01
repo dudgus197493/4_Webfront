@@ -1,9 +1,6 @@
 # 기본적인 CSS 선택자(Selector)
 > ### 현재 HTML 문서 내에서 특정한 요소를 선택하는 문자 or 문자열
 
-- [CSS(Cascading Style Sheets)](#csscascading-style-sheets)
-- [기본적인 CSS 선택자(Selector)](#기본적인-css-선택자selector)
-
 - [반응 선택자](#반응-선택자)
 
 - [상태 선택자](#상태-선택자)
