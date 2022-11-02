@@ -153,3 +153,4 @@ function readValue() {  // 입력된 값을 읽어들여 채팅창에 출력
     // 채팅 입력창 초기화
     input.value = "";
 }
+
