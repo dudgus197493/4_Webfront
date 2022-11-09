@@ -67,7 +67,6 @@ for( let i = 0; i < boxColor.length; i++){
     });
 }
 
-
 // transition-duration 변경 버튼 클릭 시
 // #input1에 작성된 값 만큼의 transition-duration을
 // 모든 box 요소에 추가

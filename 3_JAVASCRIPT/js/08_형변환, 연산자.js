@@ -38,10 +38,8 @@ btn3.addEventListener("click", function(){
     console.log("Math.round(값) : " + Math.round(input3.value));
 });
 
-
 // Math.random()
 document.getElementById("btn4").addEventListener("click", function(){
-
     // rgb 색상 랜덤 대입 (0 ~ 255)
     const r = Math.floor(Math.random() * 256); // 0.0 <= ran < 256.0
     const g = Math.floor(Math.random() * 256);
