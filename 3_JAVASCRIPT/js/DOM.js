@@ -101,3 +101,44 @@ document.getElementById("btn2").addEventListener("click", function(){
     // 이벤트가 발생한 요소의 다음 다음 형제 요소의 배경색을 red로 변경
     this.nextElementSibling.nextElementSibling.style.backgroundColor = "red";
 });
+
+// innerHTML
+const btn3 = document.getElementById("btn3");
+const div3 = document.getElementById("div3");
+
+let count3 = 1;
+btn3.addEventListener("click",function(){
+    if(count3 <= 10){
+        const input = "<input type='text'>";
+        div3.innerHTML += `<div>${count3 + input}</div>`;
+        count3++;
+    }
+});
+
+
+// createElement()
+const btn4 = document.getElementById("btn4");
+const div4 = document.getElementById("div4");
+
+let count4 = 1;
+
+btn4.addEventListener("click", function(){
+    
+    if(count4 <= 10){
+
+        // document.createElement("태그명") 
+        // -> 해당 태그 요소를 생성하여 반환
+        // -> 요소가 생성될 뿐이지 화면에 추가되는것이 아니다.
+
+        const div = document.createElement("div");
+        const input = document.createElement("input");
+
+        // #div4 > div > input
+
+        // div의 내용으로 count4 추가 후 1증가
+        div.innerText = count4++;
+
+        div.append(input);
+        div4.append(div);
+    }
+});
